@@ -146,7 +146,7 @@ class Configuration
 	 *
      * @var string $db_name
      */
-	public static $db_name = 'one_consultores';
+	public static $db_name = 'oneconsultores';
 
 	/**
      * Usuario de la base de datos
@@ -155,7 +155,7 @@ class Configuration
 	 *
      * @var string $db_user
      */
-	public static $db_user = 'one_consultores';
+	public static $db_user = 'oneconsultores';
 
 	/**
      * Contraseña de la base de datos.
@@ -164,7 +164,7 @@ class Configuration
 	 *
      * @var string $db_pass
      */
-	public static $db_pass = 'B!39ze5g';
+	public static $db_pass = '*V50auu9';
 
 	/**
      * Tipo de caracteres para la base de datos. Opcional.
