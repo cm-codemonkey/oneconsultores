@@ -115,6 +115,9 @@
                         <img src="{$path.images}clients/cancun_sailing.png" alt="Logotype">
                     </figure>
                     <figure>
+                        <img src="{$path.images}clients/majestic.png" alt="Logotype">
+                    </figure>
+                    <figure>
                         <img src="{$path.images}clients/icebar.png" alt="Logotype">
                     </figure>
                     <figure>
@@ -153,8 +156,11 @@
                     <figure>
                         <img src="{$path.images}clients/gobe_cafe.png" alt="Logotype">
                     </figure>
-                    <figure>
+                    <!-- <figure>
                         <img src="{$path.images}clients/greenkids.png" alt="Logotype">
+                    </figure> -->
+                    <figure>
+                        <img src="{$path.images}clients/kolekaabal.png" alt="Logotype">
                     </figure>
                     <figure>
                         <img src="{$path.images}clients/whaton.png" alt="Logotype">
@@ -177,9 +183,9 @@
                     <figure>
                         <img src="{$path.images}clients/notaria_62.png" alt="Logotype">
                     </figure>
-                    <figure>
+                    <!-- <figure>
                         <img src="{$path.images}clients/24.png" alt="Logotype">
-                    </figure>
+                    </figure> -->
                     <figure>
                         <img src="{$path.images}clients/jc.png" alt="Logotype">
                     </figure>
