@@ -118,6 +118,9 @@
                         <img src="{$path.images}clients/majestic.png" alt="Logotype">
                     </figure>
                     <figure>
+                        <img src="{$path.images}clients/westin.png" alt="Logotype">
+                    </figure>
+                    <figure>
                         <img src="{$path.images}clients/icebar.png" alt="Logotype">
                     </figure>
                     <figure>
@@ -134,6 +137,9 @@
                     </figure>
                     <figure>
                         <img src="{$path.images}clients/kreatravel.png" alt="Logotype">
+                    </figure>
+                    <figure>
+                        <img src="{$path.images}clients/imperial_perlas.png" alt="Logotype">
                     </figure>
                     <figure>
                         <img src="{$path.images}clients/MAPLA.png" alt="Logotype">
