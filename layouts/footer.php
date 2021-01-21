@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="last">
-                <p>Copyright © <strong>{$vkye_webpage}</strong>. {$lang.all_rights_reserved}</p>
+                <p>Copyright © 2021 <strong>{$vkye_webpage}</strong> <i class="fas fa-heart"></i> Desarrollado por <a href="https://codemonkey.com.mx">Code Monkey</a></p>
                 <a href="/aviso_de_privacidad">{$lang.privacy_notice}</a>
             </div>
         </footer>

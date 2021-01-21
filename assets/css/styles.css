@@ -1911,6 +1911,10 @@ body > footer > div.last > p {
     float: left;
 }
 
+body > footer > div.last > p > i {
+    color: #f44336;
+}
+
 body > footer > div.last > a {
     float: right;
 }
