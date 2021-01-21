@@ -169,6 +169,9 @@
                         <img src="{$path.images}clients/kolekaabal.png" alt="Logotype">
                     </figure>
                     <figure>
+                        <img src="{$path.images}clients/royalresorts.png" alt="Logotype">
+                    </figure>
+                    <figure>
                         <img src="{$path.images}clients/whaton.png" alt="Logotype">
                     </figure>
                     <figure>
