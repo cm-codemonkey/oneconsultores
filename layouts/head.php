@@ -44,6 +44,7 @@
 							<div class="dropmenu">
 								<a class="btn btn-link">{$lang.main_menu_servicios}</a>
 								<div class="dropdown">
+									<a href="https://marbu.one-consultores.com"><img src="{$path.images}marbuu.png">{$lang.main_menu_servicios_laboratorio}</a>
 									<a href="/servicios/contables"><img src="{$path.images}icon_contables.png">{$lang.main_menu_servicios_contables}</a>
 									<a href="/servicios/fiscales"><img src="{$path.images}icon_fiscales.png">{$lang.main_menu_servicios_fiscales}</a>
 									<a href="/servicios/mercadotecnia"><img src="{$path.images}icon_mercadotecnia.png">{$lang.main_menu_servicios_mercadotecnia}</a>
@@ -53,12 +54,11 @@
 									<a href="/servicios/psicologia"><img src="{$path.images}icon_psicologia.png">{$lang.main_menu_servicios_psicologia}</a>
 									<a href="/servicios/poligrafo"><img src="{$path.images}icon_poligrafo.png">{$lang.main_menu_servicios_poligrafo}</a>
 									<a href="/servicios/medicina_del_trabajo"><img src="{$path.images}icon_medicina_del_trabajo.png">{$lang.main_menu_servicios_medicina}</a>
-									<a href="/servicios/laboratorio"><img src="{$path.images}icon_laboratorio.png">{$lang.main_menu_servicios_laboratorio}</a>
 								</div>
 							</div>
 						</li>
 						<li class="list-inline-item">
-							<a href="/marbu" class="btn btn-link icon"><img src="{$path.images}marbuu.png" alt="">{$lang.main_menu_marbu}</a>
+							<a href="https://marbu.one-consultores.com" class="btn btn-link icon"><img src="{$path.images}marbuu.png" alt="">{$lang.main_menu_marbu}</a>
 						</li>
 						<!-- <li class="list-inline-item">
 							<a href="#" class="btn btn-link">{$lang.main_menu_soluciones}</a>
@@ -117,12 +117,12 @@
 									<a href="/servicios/medicina_del_trabajo" class="btn btn-link">{$lang.main_menu_servicios_medicina}</a>
 								</li>
 								<li>
-									<a href="/servicios/laboratorio" class="btn btn-link">{$lang.main_menu_servicios_laboratorio}</a>
+									<a href="https://marbu.one-consultores.com" class="btn btn-link">{$lang.main_menu_servicios_laboratorio}</a>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<a href="/marbu" class="btn btn-link icon"><img src="{$path.images}marbuu.png" alt="">{$lang.main_menu_marbu}</a>
+							<a href="https://marbu.one-consultores.com" class="btn btn-link icon"><img src="{$path.images}marbuu.png" alt="">{$lang.main_menu_marbu}</a>
 						</li>
 						<!-- <li>
 							<a href="#" class="btn btn-link">{$lang.main_menu_soluciones}</a>

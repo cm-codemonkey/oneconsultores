@@ -80,7 +80,7 @@
                                 <span>{$lang.main_menu_servicios_medicina}</span>
                             </div>
                             <div>
-                                <a href="/servicios/laboratorio"><img src="{$path.images}icon_laboratorio_lp.png" alt="Service"></a>
+                                <a href="https://marbu.one-consultores.com"><img src="{$path.images}icon_laboratorio_lp.png" alt="Service"></a>
                                 <span>{$lang.main_menu_servicios_laboratorio}</span>
                             </div>
                         </div>

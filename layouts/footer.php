@@ -13,12 +13,12 @@
                     <a href="/servicios/psicologia">{$lang.main_menu_servicios_psicologia}</a>
                     <a href="/servicios/poligrafo">{$lang.main_menu_servicios_poligrafo}</a>
                     <a href="/servicios/medicina_del_trabajo">{$lang.main_menu_servicios_medicina}</a>
-                    <a href="/servicios/laboratorio">{$lang.main_menu_servicios_laboratorio}</a>
+                    <a href="https://marbu.one-consultores.com">{$lang.main_menu_servicios_laboratorio}</a>
                 </div>
                 <div class="column">
                     <h2>{$lang.company}</h2>
                     <a href="/nosotros">{$lang.main_menu_nosotros}</a>
-                    <a href="/marbu">{$lang.main_menu_marbu}</a>
+                    <a href="https://marbu.one-consultores.com">{$lang.main_menu_marbu}</a>
                     <a href="/id_one">{$lang.main_menu_id_one}</a>
                     <a href="/blog">{$lang.main_menu_blog}</a>
                     <a href="/administrator">{$lang.login}</a>

@@ -1162,7 +1162,10 @@ div.home_services > figure > a {
     left: 0px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
     font-size: 20px;
     font-weight: 600;
     color: #fff;
@@ -1173,6 +1176,11 @@ div.home_services > figure > a {
 div.home_services > figure > a:hover {
     color: #fff;
     background-color: rgba(0, 0, 0, 0);
+}
+
+div.home_services > figure > a > img {
+    width: auto;
+    height: 100px;
 }
 
 /*  */

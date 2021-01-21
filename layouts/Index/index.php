@@ -12,6 +12,10 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
 <div id="page">
     <div class="home_services">
         <figure>
+            <img src="{$path.images}servicio-laboratorio.jpg" alt="Background">
+            <a href="https://marbu.one-consultores.com"><img src="{$path.images}marbuu.png" alt="Marbu"><br>{$lang.main_menu_servicios_laboratorio}</a>
+        </figure>
+        <figure>
             <img src="{$path.images}servicio-contable.jpg" alt="Background">
             <a href="/servicios/contables">{$lang.main_menu_servicios_contables}</a>
         </figure>
@@ -46,10 +50,6 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
         <figure>
             <img src="{$path.images}servicio-medicina.jpg" alt="Background">
             <a href="/servicios/medicina_del_trabajo">{$lang.main_menu_servicios_medicina}</a>
-        </figure>
-        <figure>
-            <img src="{$path.images}servicio-laboratorio.jpg" alt="Background">
-            <a href="/servicios/laboratorio">{$lang.main_menu_servicios_laboratorio}</a>
         </figure>
     </div>
     <div id="home_ads" class="owl-carousel owl-theme">
@@ -95,7 +95,8 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                 </div>
             </div>
             <h6>Prueba para <strong>Covid 19</strong></h6>
-            <a data-button-modal="cotiza_antigeno">Cotizar</a>
+            <!-- <a data-button-modal="cotiza_antigeno">Cotizar</a> -->
+            <a href="https://marbu.one-consultores.com">Saber más</a>
         </div>
         <div class="item anticuerpo">
             <h4>Anticuerpo</h4>
@@ -129,7 +130,8 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                 </div>
             </div>
             <h6>Prueba para <strong>Covid 19</strong></h6>
-            <a data-button-modal="cotiza_anticuerpo">Cotizar</a>
+            <!-- <a data-button-modal="cotiza_anticuerpo">Cotizar</a> -->
+            <a href="https://marbu.one-consultores.com">Saber más</a>
         </div>
         <div class="item socio_economico">
             <figure>
