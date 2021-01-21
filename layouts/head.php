@@ -14,7 +14,7 @@
 		<meta name="description" content="{$_vkye_seo_description}" />
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 		<link rel="stylesheet" href="{$path.css}valkyrie.css?v=1.0" type="text/css" media="all" />
-		<link rel="stylesheet" href="{$path.css}styles.css?v=1.0" type="text/css" media="all" />
+		<link rel="stylesheet" href="{$path.css}styles.css?v=2.1" type="text/css" media="all" />
 		<link rel="stylesheet" href="{$path.css}icons.css?v=1.0" type="text/css" media="all" />
 		{$dependencies.css}
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
