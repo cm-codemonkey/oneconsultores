@@ -138,8 +138,17 @@
                     <figure>
                         <img src="{$path.images}clients/kreatravel.png" alt="Logotype">
                     </figure>
-                    <figure>
+                    <!-- <figure>
                         <img src="{$path.images}clients/imperial_perlas.png" alt="Logotype">
+                    </figure> -->
+                    <figure>
+                        <img src="{$path.images}clients/belo.png" alt="Logotype">
+                    </figure>
+                    <figure>
+                        <img src="{$path.images}clients/cancun_bay.png" alt="Logotype">
+                    </figure>
+                    <figure>
+                        <img src="{$path.images}clients/yellow.png" alt="Logotype">
                     </figure>
                     <figure>
                         <img src="{$path.images}clients/MAPLA.png" alt="Logotype">
