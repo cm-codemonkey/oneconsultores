@@ -41,18 +41,22 @@ class Index_controller extends Controller
 
 				if (empty($errors))
 				{
-					$header_mail  = 'MIME-Version: 1.0' . "\r\n";
-					$header_mail .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-					$header_mail .= 'From: ' . Configuration::$web_page . ' <noreply@one-consultores.com>' . "\r\n";
+					$mail = new Mailer(true);
 
-					if ($_POST['action'] == 'cotiza_antigeno')
-						$subject_mail .= 'Cotización | Prueba Antigeno';
-					else if ($_POST['action'] == 'cotiza_anticuerpo')
-						$subject_mail .= 'Cotización | Prueba Anticuerpo';
+					try
+					{
+						$mail->setFrom('noreply@one-consultores.com', Configuration::$web_page);
+						$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
 
-					$body_mail = 'Nombre de la empresa: ' . $_POST['company_name'] . ', Dirección de la empresa: ' . $_POST['company_address'] . ', Nombre de contacto: ' . $_POST['contact_name'] . ', Teléfono de contacto: ' . $_POST['contact_phone'] . ', Email de contacto: ' . $_POST['contact_email'] . ', Cantidad de pruebas: ' . $_POST['tests_quantity'];
+						if ($_POST['action'] == 'cotiza_antigeno')
+							$mail->Subject .= 'Cotización | Prueba Antigeno';
+						else if ($_POST['action'] == 'cotiza_anticuerpo')
+							$mail->Subject .= 'Cotización | Prueba Anticuerpo';
 
-				    mail('info@one-consultores.com', $subject_mail, $body_mail, $header_mail);
+						$mail->Body = 'Nombre de la empresa: ' . $_POST['company_name'] . ', Dirección de la empresa: ' . $_POST['company_address'] . ', Nombre de contacto: ' . $_POST['contact_name'] . ', Teléfono de contacto: ' . $_POST['contact_phone'] . ', Email de contacto: ' . $_POST['contact_email'] . ', Cantidad de pruebas: ' . $_POST['tests_quantity'];
+						$mail->send();
+					}
+					catch (Exception $e) {}
 
 					if ($this->lang == 'es')
 						$message = '¡Gracias por ponerte en contacto con nosotros!';
@@ -100,13 +104,17 @@ class Index_controller extends Controller
 
 				if (empty($errors))
 				{
-					$header_mail  = 'MIME-Version: 1.0' . "\r\n";
-					$header_mail .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-					$header_mail .= 'From: ' . Configuration::$web_page . ' <noreply@one-consultores.com>' . "\r\n";
-					$subject_mail .= 'Cotización | Estudio socioeconómico';
-					$body_mail = 'Nombre de la empresa: ' . $_POST['company_name'] . 'RFC de la empresa: ' . $_POST['rfc'] . ', Dirección de la empresa: ' . $_POST['company_address'] . ', Rotación de empleados por mes: ' . $_POST['company_rot'] . ', Nombre de contacto: ' . $_POST['contact_name'] . ', Teléfono de contacto: ' . $_POST['contact_phone'] . ', Email de contacto: ' . $_POST['contact_email'];
+					$mail = new Mailer(true);
 
-				    mail('info@one-consultores.com', $subject_mail, $body_mail, $header_mail);
+					try
+					{
+						$mail->setFrom('noreply@one-consultores.com', Configuration::$web_page);
+						$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
+						$mail->Subject .= 'Cotización | Estudio socioeconómico';
+						$mail->Body = 'Nombre de la empresa: ' . $_POST['company_name'] . 'RFC de la empresa: ' . $_POST['rfc'] . ', Dirección de la empresa: ' . $_POST['company_address'] . ', Rotación de empleados por mes: ' . $_POST['company_rot'] . ', Nombre de contacto: ' . $_POST['contact_name'] . ', Teléfono de contacto: ' . $_POST['contact_phone'] . ', Email de contacto: ' . $_POST['contact_email'];
+						$mail->send();
+					}
+					catch (Exception $e) {}
 
 					if ($this->lang == 'es')
 						$message = '¡Gracias por ponerte en contacto con nosotros!';

@@ -39,13 +39,17 @@ class Contact_controller extends Controller
 
 			if (empty($errors))
 			{
-				$header_mail  = 'MIME-Version: 1.0' . "\r\n";
-				$header_mail .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-				$header_mail .= 'From: ' . Configuration::$web_page . ' <noreply@one-consultores.com>' . "\r\n";
-				$subject_mail .= 'Contacto';
-				$body_mail = 'Nombre: ' . $_POST['name'] . ', Teléfono: ' . $_POST['phone'] . ', Correo electrónico: ' . $_POST['email'] . ', Compañia: ' . $_POST['company'] . ', Comentario: ' . $_POST['comment'];
+				$mail = new Mailer(true);
 
-			    mail('info@one-consultores.com', $subject_mail, $body_mail, $header_mail);
+				try
+				{
+					$mail->setFrom('noreply@one-consultores.com', Configuration::$web_page);
+					$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
+					$mail->Subject = 'Nuevo contacto';
+					$mail->Body = 'Nombre: ' . $_POST['name'] . '<br>Correo electrónico: ' . $_POST['email'] . '<br>Teléfono: ' . $_POST['phone'] . '<br>Compañia: ' . $_POST['company'] . '<br> Comentario: ' . $_POST['comment'];
+					$mail->send();
+				}
+				catch (Exception $e) {}
 
 				if ($this->lang == 'es')
 					$message = '¡Gracias por ponerte en contacto con nosotros!';
