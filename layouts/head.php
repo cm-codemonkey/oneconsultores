@@ -33,8 +33,8 @@
 		<script>
 		    grecaptcha.ready(function() {
 			    grecaptcha.execute('6LdgUVAaAAAAANKpVofcI5u1yMxq_dXlnPd3iitu', {action: 'submit'}).then(function(token) {
-				    var recaptcha_1 = document.getElementById('recaptcha_1');
-				    recaptcha_1.value = token;
+				    var recaptchaResponse = document.getElementById('recaptchaResponse');
+				    recaptchaResponse.value = token;
 			    });
 			});
 		</script>
