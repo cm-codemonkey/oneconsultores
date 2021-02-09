@@ -81,7 +81,9 @@ class Contact_controller extends Controller
 			{
 				echo json_encode([
 					'status' => 'error',
-					'errors' => ''
+					'errors' => [
+						'RECAPTCHA' => 'Error to spam'
+					]
 				]);
 			}
 		}
