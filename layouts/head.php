@@ -18,16 +18,6 @@
 		<link rel="stylesheet" href="{$path.css}icons.css?v=1.0" type="text/css" media="all" />
 		{$dependencies.css}
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180983917-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-180983917-1');
-	  	</script>
-
 		<!-- Recaptcha v3 -->
 		<script src="https://www.google.com/recaptcha/api.js?render=6LdgUVAaAAAAANKpVofcI5u1yMxq_dXlnPd3iitu"></script>
 		<script>
@@ -44,6 +34,15 @@
 			    });
 			});
 		</script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180983917-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-180983917-1');
+	  	</script>
 	</head>
 	<body>
 		<header class="topbar">
