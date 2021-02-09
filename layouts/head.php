@@ -35,6 +35,12 @@
 			    grecaptcha.execute('6LdgUVAaAAAAANKpVofcI5u1yMxq_dXlnPd3iitu', {action: 'submit'}).then(function(token) {
 				    var recaptcha_1 = document.getElementById('recaptcha_1');
 				    recaptcha_1.value = token;
+				    var recaptcha_2 = document.getElementById('recaptcha_2');
+				    recaptcha_2.value = token;
+				    var recaptcha_3 = document.getElementById('recaptcha_3');
+				    recaptcha_3.value = token;
+				    var recaptcha_4 = document.getElementById('recaptcha_4');
+				    recaptcha_4.value = token;
 			    });
 			});
 		</script>

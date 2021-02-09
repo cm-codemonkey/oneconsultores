@@ -342,6 +342,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                         </div>
                     </div>
                     <div class="col-md-6 offset-md-3 suffix-md-3 m-t-20">
+                        <input type="hidden" name="recaptcha_2" id="recaptcha_2">
                         <button type="submit" class="btn btn-warning btn-block btn-lg m-b-5">Enviar</button>
                         <a button-close class="btn btn-warning btn-block btn-lg">Cancelar</a>
                     </div>
@@ -405,6 +406,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                         </div>
                     </div>
                     <div class="col-md-6 offset-md-3 suffix-md-3 m-t-20">
+                        <input type="hidden" name="recaptcha_3" id="recaptcha_3">
                         <button type="submit" class="btn btn-warning btn-block btn-lg m-b-5">Enviar</button>
                         <a button-close class="btn btn-warning btn-block btn-lg">Cancelar</a>
                     </div>
@@ -476,6 +478,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                         </div>
                     </div>
                     <div class="col-md-6 offset-md-3 suffix-md-3 m-t-20">
+                        <input type="hidden" name="recaptcha_4" id="recaptcha_4">
                         <button type="submit" class="btn btn-warning btn-block btn-lg m-b-5">Enviar</button>
                         <a button-close class="btn btn-warning btn-block btn-lg">Cancelar</a>
                     </div>

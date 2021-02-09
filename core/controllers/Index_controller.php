@@ -41,32 +41,55 @@ class Index_controller extends Controller
 
 				if (empty($errors))
 				{
-					$mail = new Mailer(true);
+					$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+					$recaptcha_secret = '6LdgUVAaAAAAAKRUlNJfgsAdnXcjIA9eWRd0BIss';
 
-					try
+					if ($_POST['action'] == 'cotiza_antigeno')
+						$recaptcha_response = $_POST['recaptcha_2'];
+					else if ($_POST['action'] == 'cotiza_anticuerpo')
+						$recaptcha_response = $_POST['recaptcha_3'];
+
+					$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+					$recaptcha = json_decode($recaptcha);
+
+					if ($recaptcha->success = true AND $recaptcha->score >= 0.7)
 					{
-						$mail->setFrom('noreply@one-consultores.com', Configuration::$web_page);
-						$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
+						$mail = new Mailer(true);
 
-						if ($_POST['action'] == 'cotiza_antigeno')
-							$mail->Subject .= 'Cotización | Prueba Antigeno';
-						else if ($_POST['action'] == 'cotiza_anticuerpo')
-							$mail->Subject .= 'Cotización | Prueba Anticuerpo';
+						try
+						{
+							$mail->setFrom('noreply@one-consultores.com', Configuration::$web_page);
+							$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
 
-						$mail->Body = 'Nombre de la empresa: ' . $_POST['company_name'] . ', Dirección de la empresa: ' . $_POST['company_address'] . ', Nombre de contacto: ' . $_POST['contact_name'] . ', Teléfono de contacto: ' . $_POST['contact_phone'] . ', Email de contacto: ' . $_POST['contact_email'] . ', Cantidad de pruebas: ' . $_POST['tests_quantity'];
-						$mail->send();
+							if ($_POST['action'] == 'cotiza_antigeno')
+								$mail->Subject .= 'Cotización | Prueba Antigeno';
+							else if ($_POST['action'] == 'cotiza_anticuerpo')
+								$mail->Subject .= 'Cotización | Prueba Anticuerpo';
+
+							$mail->Body = 'Nombre de la empresa: ' . $_POST['company_name'] . ', Dirección de la empresa: ' . $_POST['company_address'] . ', Nombre de contacto: ' . $_POST['contact_name'] . ', Teléfono de contacto: ' . $_POST['contact_phone'] . ', Email de contacto: ' . $_POST['contact_email'] . ', Cantidad de pruebas: ' . $_POST['tests_quantity'];
+							$mail->send();
+						}
+						catch (Exception $e) {}
+
+						if ($this->lang == 'es')
+							$message = '¡Gracias por ponerte en contacto con nosotros!';
+						else if ($this->lang == 'en')
+							$message = '¡Thank you for contacting us!';
+
+						echo json_encode([
+							'status' => 'success',
+							'message' => $message
+						]);
 					}
-					catch (Exception $e) {}
-
-					if ($this->lang == 'es')
-						$message = '¡Gracias por ponerte en contacto con nosotros!';
-					else if ($this->lang == 'en')
-						$message = '¡Thank you for contacting us!';
-
-					echo json_encode([
-						'status' => 'success',
-						'message' => $message
-					]);
+					else
+					{
+						echo json_encode([
+							'status' => 'error',
+							'errors' => [
+								['RECAPTCHA', 'RECAPTCHA ERROR']
+							]
+						]);
+					}
 				}
 				else
 				{
@@ -104,27 +127,45 @@ class Index_controller extends Controller
 
 				if (empty($errors))
 				{
-					$mail = new Mailer(true);
+					$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+					$recaptcha_secret = '6LdgUVAaAAAAAKRUlNJfgsAdnXcjIA9eWRd0BIss';
+					$recaptcha_response = $_POST['recaptcha_4'];
+					$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+					$recaptcha = json_decode($recaptcha);
 
-					try
+					if ($recaptcha->success = true AND $recaptcha->score >= 0.7)
 					{
-						$mail->setFrom('noreply@one-consultores.com', Configuration::$web_page);
-						$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
-						$mail->Subject .= 'Cotización | Estudio socioeconómico';
-						$mail->Body = 'Nombre de la empresa: ' . $_POST['company_name'] . 'RFC de la empresa: ' . $_POST['rfc'] . ', Dirección de la empresa: ' . $_POST['company_address'] . ', Rotación de empleados por mes: ' . $_POST['company_rot'] . ', Nombre de contacto: ' . $_POST['contact_name'] . ', Teléfono de contacto: ' . $_POST['contact_phone'] . ', Email de contacto: ' . $_POST['contact_email'];
-						$mail->send();
+						$mail = new Mailer(true);
+
+						try
+						{
+							$mail->setFrom('noreply@one-consultores.com', Configuration::$web_page);
+							$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
+							$mail->Subject .= 'Cotización | Estudio socioeconómico';
+							$mail->Body = 'Nombre de la empresa: ' . $_POST['company_name'] . 'RFC de la empresa: ' . $_POST['rfc'] . ', Dirección de la empresa: ' . $_POST['company_address'] . ', Rotación de empleados por mes: ' . $_POST['company_rot'] . ', Nombre de contacto: ' . $_POST['contact_name'] . ', Teléfono de contacto: ' . $_POST['contact_phone'] . ', Email de contacto: ' . $_POST['contact_email'];
+							$mail->send();
+						}
+						catch (Exception $e) {}
+
+						if ($this->lang == 'es')
+							$message = '¡Gracias por ponerte en contacto con nosotros!';
+						else if ($this->lang == 'en')
+							$message = '¡Thank you for contacting us!';
+
+						echo json_encode([
+							'status' => 'success',
+							'message' => $message
+						]);
 					}
-					catch (Exception $e) {}
-
-					if ($this->lang == 'es')
-						$message = '¡Gracias por ponerte en contacto con nosotros!';
-					else if ($this->lang == 'en')
-						$message = '¡Thank you for contacting us!';
-
-					echo json_encode([
-						'status' => 'success',
-						'message' => $message
-					]);
+					else
+					{
+						echo json_encode([
+							'status' => 'error',
+							'errors' => [
+								['RECAPTCHA', 'RECAPTCHA ERROR']
+							]
+						]);
+					}
 				}
 				else
 				{
