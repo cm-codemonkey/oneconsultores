@@ -32,7 +32,7 @@
 		<script src="https://www.google.com/recaptcha/api.js?render=6LdgUVAaAAAAANKpVofcI5u1yMxq_dXlnPd3iitu"></script>
 		<script>
 		    grecaptcha.ready(function() {
-			    grecaptcha.execute('6LdgUVAaAAAAANKpVofcI5u1yMxq_dXlnPd3iitu', {action: 'submit'}).then(function(token) {
+			    grecaptcha.execute('6LdgUVAaAAAAANKpVofcI5u1yMxq_dXlnPd3iitu', {action: 'formulario'}).then(function(token) {
 				    var recaptchaResponse = document.getElementById('recaptchaResponse');
 				    recaptchaResponse.value = token;
 			    });
