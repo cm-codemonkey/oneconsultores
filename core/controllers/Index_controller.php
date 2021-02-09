@@ -41,15 +41,11 @@ class Index_controller extends Controller
 
 				if (empty($errors))
 				{
-					$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-					$recaptcha_secret = '6LdgUVAaAAAAAKRUlNJfgsAdnXcjIA9eWRd0BIss';
-
 					if ($_POST['action'] == 'cotiza_antigeno')
-						$recaptcha_response = $_POST['recaptcha_2'];
+						$recaptcha = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6LdgUVAaAAAAAKRUlNJfgsAdnXcjIA9eWRd0BIss&response=' . $_POST['recaptcha_2']);
 					else if ($_POST['action'] == 'cotiza_anticuerpo')
-						$recaptcha_response = $_POST['recaptcha_3'];
+						$recaptcha = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6LdgUVAaAAAAAKRUlNJfgsAdnXcjIA9eWRd0BIss&response=' . $_POST['recaptcha_3']);
 
-					$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
 					$recaptcha = json_decode($recaptcha);
 
 					if ($recaptcha->success = true AND $recaptcha->score >= 0.7)
@@ -127,10 +123,7 @@ class Index_controller extends Controller
 
 				if (empty($errors))
 				{
-					$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-					$recaptcha_secret = '6LdgUVAaAAAAAKRUlNJfgsAdnXcjIA9eWRd0BIss';
-					$recaptcha_response = $_POST['recaptcha_4'];
-					$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+					$recaptcha = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6LdgUVAaAAAAAKRUlNJfgsAdnXcjIA9eWRd0BIss&response=' . $_POST['recaptcha_4']);
 					$recaptcha = json_decode($recaptcha);
 
 					if ($recaptcha->success = true AND $recaptcha->score >= 0.7)

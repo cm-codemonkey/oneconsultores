@@ -39,10 +39,7 @@ class Contact_controller extends Controller
 
 			if (empty($errors))
 			{
-				$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-				$recaptcha_secret = '6LdgUVAaAAAAAKRUlNJfgsAdnXcjIA9eWRd0BIss';
-				$recaptcha_response = $_POST['recaptcha_1'];
-				$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+				$recaptcha = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6LdgUVAaAAAAAKRUlNJfgsAdnXcjIA9eWRd0BIss&response=' . $_POST['recaptcha_1']);
 				$recaptcha = json_decode($recaptcha);
 
 				if ($recaptcha->success = true AND $recaptcha->score >= 0.7)
