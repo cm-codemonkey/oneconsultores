@@ -19,11 +19,11 @@ class Contact_controller extends Controller
 		{
 			$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
 			$recaptcha_secret = '6LdgUVAaAAAAAKRUlNJfgsAdnXcjIA9eWRd0BIss';
-			$recaptcha_response = $_POST['recaptcha_response'];
+			$recaptcha_response = $_POST['recaptcha_1'];
 			$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
 			$recaptcha = json_decode($recaptcha);
 
-			if ($recaptcha->score >= 0.7)
+			if ($recaptcha->success = true AND $recaptcha->score >= 0.7)
 			{
 				$errors = [];
 
