@@ -29,14 +29,11 @@
 	  	</script>
 
 		<!-- Recaptcha v3 -->
-		<script src='https://www.google.com/recaptcha/api.js?render=6LdgUVAaAAAAANKpVofcI5u1yMxq_dXlnPd3iitu'></script>
+		<script src="https://www.google.com/recaptcha/api.js"></script>
 		<script>
-		    grecaptcha.ready(function() {
-		    grecaptcha.execute('6LdgUVAaAAAAANKpVofcI5u1yMxq_dXlnPd3iitu', {action: 'formulario'})
-		    .then(function(token) {
-		    var recaptchaResponse = document.getElementById('recaptchaResponse');
-		    recaptchaResponse.value = token;
-		    });});
+			function onSubmit(token) {
+				document.getElementById("recaptcha-1").submit();
+			}
 		</script>
 	</head>
 	<body>
