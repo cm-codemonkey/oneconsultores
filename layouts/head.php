@@ -28,6 +28,17 @@
 
 		  gtag('config', 'UA-180983917-1');
 	  	</script>
+
+		<!-- Recaptcha v3 -->
+		<script src='https://www.google.com/recaptcha/api.js?render=6LdgUVAaAAAAANKpVofcI5u1yMxq_dXlnPd3iitu'></script>
+		<script>
+		    grecaptcha.ready(function() {
+		    grecaptcha.execute('6LdgUVAaAAAAANKpVofcI5u1yMxq_dXlnPd3iitu', {action: 'formulario'})
+		    .then(function(token) {
+		    var recaptchaResponse = document.getElementById('recaptchaResponse');
+		    recaptchaResponse.value = token;
+		    });});
+		</script>
 	</head>
 	<body>
 		<header class="topbar">
