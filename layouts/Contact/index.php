@@ -76,10 +76,10 @@ $this->dependencies->add(['js', '{$path.js}Contact/index.js']);
                             </label>
                         </div>
                         <div class="col-md-6 offset-md-3 suffix-md-3 m-t-20">
-                            <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
                             <button type="submit" class="btn btn-warning btn-block btn-lg">{$lang.contacto_button_submit}</button>
                         </div>
                     </div>
+                    <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
                 </form>
             </div>
         </section>
