@@ -22,7 +22,7 @@ $this->dependencies->add(['js', '{$path.js}Contact/index.js']);
                 <div class="col-lg-8 offset-lg-2 suffix-lg-2 text-center">
                     <p class="font-18">{$lang.contacto_description_section}</p>
                 </div>
-                <form id="recaptcha-1" name="contact" class="col-lg-10 offset-lg-1 suffix-lg-1 m-t-50">
+                <form name="contact" class="col-lg-10 offset-lg-1 suffix-lg-1 m-t-50">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="label">
@@ -76,7 +76,8 @@ $this->dependencies->add(['js', '{$path.js}Contact/index.js']);
                             </label>
                         </div>
                         <div class="col-md-6 offset-md-3 suffix-md-3 m-t-20">
-                            <button type="submit" class="btn btn-warning btn-block btn-lg g-recaptcha" data-sitekey="6LdgUVAaAAAAANKpVofcI5u1yMxq_dXlnPd3iitu" data-callback="onSubmit" data-action="submit">{$lang.contacto_button_submit}</button>
+                            <input type="hidden" name="recaptcha_1" id="recaptcha_1">
+                            <button type="submit" class="btn btn-warning btn-block btn-lg">{$lang.contacto_button_submit}</button>
                         </div>
                     </div>
                 </form>
