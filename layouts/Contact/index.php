@@ -76,7 +76,6 @@ $this->dependencies->add(['js', '{$path.js}Contact/index.js']);
                             </label>
                         </div>
                         <div class="col-md-6 offset-md-3 suffix-md-3 m-t-20">
-                            <div class="g-recaptcha" data-sitekey="6LdglrcZAAAAALsoHXxohbDO1XXsmCU6KSQvo2Lz"></div>
                             <button type="submit" class="btn btn-warning btn-block btn-lg">{$lang.contacto_button_submit}</button>
                         </div>
                     </div>
