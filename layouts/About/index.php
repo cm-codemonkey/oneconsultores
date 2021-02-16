@@ -121,6 +121,12 @@
                         <img src="{$path.images}clients/westin.png" alt="Logotype">
                     </figure>
                     <figure>
+                        <img src="{$path.images}clients/excellence_collection.png" alt="Logotype">
+                    </figure>
+                    <figure>
+                        <img src="{$path.images}clients/dos_playas.png" alt="Logotype">
+                    </figure>
+                    <figure>
                         <img src="{$path.images}clients/icebar.png" alt="Logotype">
                     </figure>
                     <figure>
