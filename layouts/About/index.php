@@ -157,7 +157,7 @@
                         <img src="{$path.images}clients/yellow.png" alt="Logotype">
                     </figure>
                     <figure>
-                        <img src="{$path.images}clients/mapla.png" alt="Logotype">
+                        <img src="{$path.images}clients/MAPLA.png" alt="Logotype">
                     </figure>
                     <figure>
                         <img src="{$path.images}clients/travel_assistant.png" alt="Logotype">
