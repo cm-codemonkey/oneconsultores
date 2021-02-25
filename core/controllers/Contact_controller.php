@@ -50,7 +50,7 @@ class Contact_controller extends Controller
 					{
 						$mail->setFrom('info@one-consultores.com', Configuration::$web_page);
 						$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
-						$mail->Subject = 'Nuevo contacto desde One Consultores';
+						$mail->Subject = 'Nuevo contacto desde oneconsultores.com';
 						$mail->Body = 'Nombre: ' . $_POST['name'] . '<br>Correo electrónico: ' . $_POST['email'] . '<br>Teléfono: ' . $_POST['phone'] . '<br>Compañia: ' . $_POST['company'] . '<br> Comentario: ' . $_POST['comment'];
 						$mail->send();
 					}

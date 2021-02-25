@@ -55,13 +55,8 @@ class Index_controller extends Controller
 						try
 						{
 							$mail->setFrom('info@one-consultores.com', Configuration::$web_page);
-							$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
-
-							if ($_POST['action'] == 'cotiza_antigeno')
-								$mail->Subject .= 'Cotización | Prueba Antigeno';
-							else if ($_POST['action'] == 'cotiza_anticuerpo')
-								$mail->Subject .= 'Cotización | Prueba Anticuerpo';
-
+							$mail->addAddress('marbu@one-consultores.com', Configuration::$web_page);
+							$mail->Subject = 'Nuevo contacto desde oneconsultores.com'
 							$mail->Body = 'Nombre de la empresa: ' . $_POST['company_name'] . ', Dirección de la empresa: ' . $_POST['company_address'] . ', Nombre de contacto: ' . $_POST['contact_name'] . ', Teléfono de contacto: ' . $_POST['contact_phone'] . ', Email de contacto: ' . $_POST['contact_email'] . ', Cantidad de pruebas: ' . $_POST['tests_quantity'];
 							$mail->send();
 						}
@@ -133,8 +128,8 @@ class Index_controller extends Controller
 						try
 						{
 							$mail->setFrom('info@one-consultores.com', Configuration::$web_page);
-							$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
-							$mail->Subject .= 'Cotización | Estudio socioeconómico';
+							$mail->addAddress('marbu@one-consultores.com', Configuration::$web_page);
+							$mail->Subject = 'Nuevo contacto desde oneconsultores.com';
 							$mail->Body = 'Nombre de la empresa: ' . $_POST['company_name'] . 'RFC de la empresa: ' . $_POST['rfc'] . ', Dirección de la empresa: ' . $_POST['company_address'] . ', Rotación de empleados por mes: ' . $_POST['company_rot'] . ', Nombre de contacto: ' . $_POST['contact_name'] . ', Teléfono de contacto: ' . $_POST['contact_phone'] . ', Email de contacto: ' . $_POST['contact_email'];
 							$mail->send();
 						}
