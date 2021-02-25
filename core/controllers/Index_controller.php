@@ -54,7 +54,7 @@ class Index_controller extends Controller
 
 						try
 						{
-							$mail->setFrom('noreply@one-consultores.com', Configuration::$web_page);
+							$mail->setFrom('info@one-consultores.com', Configuration::$web_page);
 							$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
 
 							if ($_POST['action'] == 'cotiza_antigeno')
@@ -132,7 +132,7 @@ class Index_controller extends Controller
 
 						try
 						{
-							$mail->setFrom('noreply@one-consultores.com', Configuration::$web_page);
+							$mail->setFrom('info@one-consultores.com', Configuration::$web_page);
 							$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
 							$mail->Subject .= 'Cotización | Estudio socioeconómico';
 							$mail->Body = 'Nombre de la empresa: ' . $_POST['company_name'] . 'RFC de la empresa: ' . $_POST['rfc'] . ', Dirección de la empresa: ' . $_POST['company_address'] . ', Rotación de empleados por mes: ' . $_POST['company_rot'] . ', Nombre de contacto: ' . $_POST['contact_name'] . ', Teléfono de contacto: ' . $_POST['contact_phone'] . ', Email de contacto: ' . $_POST['contact_email'];

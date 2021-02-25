@@ -48,9 +48,9 @@ class Contact_controller extends Controller
 
 					try
 					{
-						$mail->setFrom('noreply@one-consultores.com', Configuration::$web_page);
+						$mail->setFrom('info@one-consultores.com', Configuration::$web_page);
 						$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
-						$mail->Subject = 'Nuevo contacto';
+						$mail->Subject = 'Nuevo contacto desde One Consultores';
 						$mail->Body = 'Nombre: ' . $_POST['name'] . '<br>Correo electrónico: ' . $_POST['email'] . '<br>Teléfono: ' . $_POST['phone'] . '<br>Compañia: ' . $_POST['company'] . '<br> Comentario: ' . $_POST['comment'];
 						$mail->send();
 					}
