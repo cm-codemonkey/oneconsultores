@@ -46,7 +46,7 @@ class Configuration
 	 *
      * @var string $error_reporting
      */
-	public static $error_reporting = 'none';
+	public static $error_reporting = 'development';
 
 	/**
      * Modo para debuggear errores.
@@ -137,7 +137,7 @@ class Configuration
 	 *
      * @var string $db_host
      */
-	public static $db_host = 'codemonkey.com.mx';
+	public static $db_host = '149.56.81.137';
 
 	/**
      * Nombre de la base de datos

@@ -56,7 +56,7 @@ class Index_controller extends Controller
 						{
 							$mail->setFrom('info@one-consultores.com', Configuration::$web_page);
 							$mail->addAddress('marbu@one-consultores.com', Configuration::$web_page);
-							$mail->Subject = 'Nuevo contacto desde oneconsultores.com'
+							$mail->Subject = 'Nuevo contacto desde oneconsultores.com';
 							$mail->Body = 'Nombre de la empresa: ' . $_POST['company_name'] . ', Dirección de la empresa: ' . $_POST['company_address'] . ', Nombre de contacto: ' . $_POST['contact_name'] . ', Teléfono de contacto: ' . $_POST['contact_phone'] . ', Email de contacto: ' . $_POST['contact_email'] . ', Cantidad de pruebas: ' . $_POST['tests_quantity'];
 							$mail->send();
 						}
