@@ -114,9 +114,9 @@
                     <figure>
                         <img src="{$path.images}clients/cancun_sailing.png" alt="Logotype">
                     </figure>
-                    <figure>
+                    <!-- <figure>
                         <img src="{$path.images}clients/moontravel.png" alt="Logotype">
-                    </figure>
+                    </figure> -->
                     <!-- <figure>
                         <img src="{$path.images}clients/majestic.png" alt="Logotype">
                     </figure> -->

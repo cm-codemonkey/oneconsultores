@@ -184,9 +184,9 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             <figure class="item hor">
                 <img src="{$path.images}clients/cancun_sailing.png" alt="Logotype">
             </figure>
-            <figure class="item hor">
+            <!-- <figure class="item hor">
                 <img src="{$path.images}clients/moontravel.png" alt="Logotype">
-            </figure>
+            </figure> -->
             <!-- <figure class="item hor">
                 <img src="{$path.images}clients/majestic.png" alt="Logotype">
             </figure> -->
