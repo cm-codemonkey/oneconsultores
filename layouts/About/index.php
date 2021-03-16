@@ -141,9 +141,9 @@
                     <figure>
                         <img src="{$path.images}clients/GOMART.png" alt="Logotype">
                     </figure>
-                    <figure>
+                    <!-- <figure>
                         <img src="{$path.images}clients/mexico_planner.png" alt="Logotype">
-                    </figure>
+                    </figure> -->
                     <figure>
                         <img src="{$path.images}clients/kreatravel.png" alt="Logotype">
                     </figure>
