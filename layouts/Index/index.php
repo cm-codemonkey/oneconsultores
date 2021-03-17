@@ -178,27 +178,18 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             <a href="/blog">¡Leé nuestro blog!</a>
         </div>
     </div>
-    <div class="home_clients">
+    <!-- <div class="home_clients">
         <h4 class="display-4 text-center text-uppercase m-t-50 m-b-40">{$lang.our_clients}</h4>
         <div id="home_clients" class="owl-carousel owl-theme">
             <figure class="item hor">
                 <img src="{$path.images}clients/cancun_sailing.png" alt="Logotype">
             </figure>
-            <!-- <figure class="item hor">
-                <img src="{$path.images}clients/moontravel.png" alt="Logotype">
-            </figure> -->
-            <!-- <figure class="item hor">
-                <img src="{$path.images}clients/majestic.png" alt="Logotype">
-            </figure> -->
             <figure class="item hor">
                 <img src="{$path.images}clients/westin.png" alt="Logotype">
             </figure>
             <figure class="item ver">
                 <img src="{$path.images}clients/excellence_collection.png" alt="Logotype">
             </figure>
-            <!-- <figure class="item ver">
-                <img src="{$path.images}clients/dos_playas.png" alt="Logotype">
-            </figure> -->
             <figure class="item hor">
                 <img src="{$path.images}clients/icebar.png" alt="Logotype">
             </figure>
@@ -211,15 +202,9 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             <figure class="item ver">
                 <img src="{$path.images}clients/GOMART.png" alt="Logotype">
             </figure>
-            <!-- <figure class="item ver">
-                <img src="{$path.images}clients/mexico_planner.png" alt="Logotype">
-            </figure> -->
             <figure class="item hor">
                 <img src="{$path.images}clients/kreatravel.png" alt="Logotype">
             </figure>
-            <!-- <figure class="item hor">
-                <img src="{$path.images}clients/imperial_perlas.png" alt="Logotype">
-            </figure> -->
             <figure class="item hor">
                 <img src="{$path.images}clients/belo.png" alt="Logotype">
             </figure>
@@ -250,9 +235,6 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             <figure class="item hor">
                 <img src="{$path.images}clients/gobe_cafe.png" alt="Logotype">
             </figure>
-            <!-- <figure class="item hor">
-                <img src="{$path.images}clients/greenkids.png" alt="Logotype">
-            </figure> -->
             <figure class="item hor">
                 <img src="{$path.images}clients/kolekaabal.png" alt="Logotype">
             </figure>
@@ -280,9 +262,6 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             <figure class="item ver">
                 <img src="{$path.images}clients/notaria_62.png" alt="Logotype">
             </figure>
-            <!-- <figure class="item hor">
-                <img src="{$path.images}clients/24.png" alt="Logotype">
-            </figure> -->
             <figure class="item hor">
                 <img src="{$path.images}clients/jc.png" alt="Logotype">
             </figure>
@@ -294,7 +273,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             </figure>
         </div>
         <a href="/nosotros">{$lang.know_more}</a>
-    </div>
+    </div> -->
 </div>
 <!-- <section class="modal" data-modal="cotiza_antigeno">
     <div class="content">

@@ -107,28 +107,19 @@
                 </div>
             </div>
         </section>
-        <section class="bg-gray p-t-50 p-b-50">
+        <!-- <section class="bg-gray p-t-50 p-b-50">
             <div class="container">
                 <h4 class="display-4 text-center text-uppercase m-t-50 m-b-40">{$lang.our_clients}</h4>
                 <div class="about_clients">
                     <figure>
                         <img src="{$path.images}clients/cancun_sailing.png" alt="Logotype">
                     </figure>
-                    <!-- <figure>
-                        <img src="{$path.images}clients/moontravel.png" alt="Logotype">
-                    </figure> -->
-                    <!-- <figure>
-                        <img src="{$path.images}clients/majestic.png" alt="Logotype">
-                    </figure> -->
                     <figure>
                         <img src="{$path.images}clients/westin.png" alt="Logotype">
                     </figure>
                     <figure>
                         <img src="{$path.images}clients/excellence_collection.png" alt="Logotype">
                     </figure>
-                    <!-- <figure>
-                        <img src="{$path.images}clients/dos_playas.png" alt="Logotype">
-                    </figure> -->
                     <figure>
                         <img src="{$path.images}clients/icebar.png" alt="Logotype">
                     </figure>
@@ -141,15 +132,9 @@
                     <figure>
                         <img src="{$path.images}clients/GOMART.png" alt="Logotype">
                     </figure>
-                    <!-- <figure>
-                        <img src="{$path.images}clients/mexico_planner.png" alt="Logotype">
-                    </figure> -->
                     <figure>
                         <img src="{$path.images}clients/kreatravel.png" alt="Logotype">
                     </figure>
-                    <!-- <figure>
-                        <img src="{$path.images}clients/imperial_perlas.png" alt="Logotype">
-                    </figure> -->
                     <figure>
                         <img src="{$path.images}clients/belo.png" alt="Logotype">
                     </figure>
@@ -180,9 +165,6 @@
                     <figure>
                         <img src="{$path.images}clients/gobe_cafe.png" alt="Logotype">
                     </figure>
-                    <!-- <figure>
-                        <img src="{$path.images}clients/greenkids.png" alt="Logotype">
-                    </figure> -->
                     <figure>
                         <img src="{$path.images}clients/kolekaabal.png" alt="Logotype">
                     </figure>
@@ -210,9 +192,6 @@
                     <figure>
                         <img src="{$path.images}clients/notaria_62.png" alt="Logotype">
                     </figure>
-                    <!-- <figure>
-                        <img src="{$path.images}clients/24.png" alt="Logotype">
-                    </figure> -->
                     <figure>
                         <img src="{$path.images}clients/jc.png" alt="Logotype">
                     </figure>
@@ -224,6 +203,6 @@
                     </figure>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 </div>
