@@ -145,7 +145,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                 <h6>Evidencia fotográfica</h6>
                 <h6>Referencias personales, laborales y vecinales</h6>
                 <h6>Investigación de ingresos/egresos</h6>
-                <a data-button-modal="cotiza_socioeconomico">Cotizar</a>
+                <!-- <a data-button-modal="cotiza_socioeconomico">Cotizar</a> -->
             </div>
         </div>
     </div>
@@ -296,7 +296,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
         <a href="/nosotros">{$lang.know_more}</a>
     </div>
 </div>
-<section class="modal" data-modal="cotiza_antigeno">
+<!-- <section class="modal" data-modal="cotiza_antigeno">
     <div class="content">
         <main>
             <form name="cotiza_antigeno">
@@ -495,4 +495,4 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             </form>
         </main>
     </div>
-</section>
+</section> -->

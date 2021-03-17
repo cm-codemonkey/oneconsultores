@@ -84,9 +84,9 @@
 						<li class="list-inline-item">
 							<a href="/blog" class="btn btn-link">{$lang.main_menu_blog}</a>
 						</li>
-						<li class="list-inline-item">
+						<!-- <li class="list-inline-item">
 							<a href="/contacto" class="btn btn-link">{$lang.main_menu_contacto}</a>
-						</li>
+						</li> -->
 						<li class="list-inline-item">
 							<a href="?<?php echo Language::get_lang_url('es'); ?>" class="flag"><img src="{$path.images}es.png"></a>
 							<a href="?<?php echo Language::get_lang_url('en'); ?>" class="flag"><img src="{$path.images}en.png"></a>
@@ -148,9 +148,9 @@
 						<li>
 							<a href="/blog" class="btn btn-link">{$lang.main_menu_blog}</a>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="/contacto" class="btn btn-link">{$lang.main_menu_contacto}</a>
-						</li>
+						</li> -->
 						<li>
 							<a href="?<?php echo Language::get_lang_url('es'); ?>" class="flag"><img src="{$path.images}es.png"></a>
 							<a href="?<?php echo Language::get_lang_url('en'); ?>" class="flag"><img src="{$path.images}en.png"></a>
@@ -159,9 +159,9 @@
 				</nav>
 			</div>
 		</header>
-		<div class="floating_contacts">
+		<!-- <div class="floating_contacts">
 			<a href="/contacto" style="background-color: #9c27b0;"><i class="fas fa-envelope"></i></a>
 			<a href="tel:+9984403302" style="background-color: #ff5722;"><i class="fas fa-phone"></i></a>
 			<a href="https://api.whatsapp.com/send?phone=+529984403302" target="_blank" style="background-color: #4AC959;"><i class="fab fa-whatsapp"></i></a>
 			<a href="https://m.me/106456467505158" target="_blank" style="background-color: #0078FF;"><i class="fab fa-facebook-messenger"></i></a>
-		</div>
+		</div> -->
