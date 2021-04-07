@@ -21,17 +21,17 @@
                     <div class="col-12 col-md-5">
                         <div class="col-12 p-b-20 text-center">
                             <figure class="figure-img">
-                                <img class="img-fluid m-b-10" src="{$path.images}poli-icono-01.png" alt="poli-icono-01">
-                            </figure>
-                            <h3 class="font-weight-bold">{$lang.servicios_poligrafo_nuestra_fortaleza_title}</h3>
-                            <p class="text-left">{$lang.servicios_poligrafo_nuestra_fortaleza_text}</p>
-                        </div>
-                        <div class="col-12 text-center">
-                            <figure class="figure-img">
                                 <img class="img-fluid m-b-10" src="{$path.images}poli-icono-02.png" alt="poli-icono-02">
                             </figure>
                             <h3 class="font-weight-bold">{$lang.servicios_poligrafo_que_hacemos_title}</h3>
                             <p class="text-left">{$lang.servicios_poligrafo_que_hacemos_text}</p>
+                        </div>
+                        <div class="col-12 text-center">
+                            <figure class="figure-img">
+                                <img class="img-fluid m-b-10" src="{$path.images}poli-icono-01.png" alt="poli-icono-01">
+                            </figure>
+                            <h3 class="font-weight-bold">{$lang.servicios_poligrafo_nuestra_fortaleza_title}</h3>
+                            <p class="text-left">{$lang.servicios_fortaleza_text}</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-7">

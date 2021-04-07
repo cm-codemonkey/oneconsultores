@@ -21,17 +21,17 @@
                     <div class="col-12 col-md-5">
                         <div class="col-12 p-b-20 text-center">
                             <figure class="figure-img">
-                                <img class="img-fluid m-b-10" src="{$path.images}icono-cont-01.png" alt="icono-cont-01">
-                            </figure>
-                            <h3 class="font-weight-bold">{$lang.servicios_contables_nuestra_fortaleza_title}</h3>
-                            <p class="text-justify">{$lang.servicios_contables_nuestra_fortaleza_text}</p>
-                        </div>
-                        <div class="col-12 text-center">
-                            <figure class="figure-img">
                                 <img class="img-fluid m-b-10" src="{$path.images}icono-global-02.png" alt="icono-global-02">
                             </figure>
                             <h3 class="font-weight-bold">{$lang.servicios_contables_que_hacemos_title}</h3>
                             <p class="text-justify">{$lang.servicios_contables_que_hacemos_text}</p>
+                        </div>
+                        <div class="col-12 text-center">
+                            <figure class="figure-img">
+                                <img class="img-fluid m-b-10" src="{$path.images}icono-cont-01.png" alt="icono-cont-01">
+                            </figure>
+                            <h3 class="font-weight-bold">{$lang.servicios_contables_nuestra_fortaleza_title}</h3>
+                            <p class="text-justify">{$lang.servicios_fortaleza_text}</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-7">

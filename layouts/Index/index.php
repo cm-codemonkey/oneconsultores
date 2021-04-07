@@ -64,6 +64,41 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             </figure>
         </div>
         <div class="item antigeno">
+            <h4>PCR</h4>
+            <div>
+                <div>
+                    <figure>
+                        <img src="{$path.images}antigeno_icon_1.svg" alt="Icon">
+                    </figure>
+                    <div>
+                        <h5>Muestra:</h5>
+                        <h6>Nasofaríngea</h6>
+                    </div>
+                </div>
+                <div>
+                    <figure>
+                        <img src="{$path.images}antigeno_icon_2.svg" alt="Icon">
+                    </figure>
+                    <div>
+                        <h5>Día de tomas:</h5>
+                        <h6>1 Día</h6>
+                    </div>
+                </div>
+                <div>
+                    <figure>
+                        <img src="{$path.images}antigeno_icon_3.svg" alt="Icon">
+                    </figure>
+                    <div>
+                        <h5>Resultados:</h5>
+                        <h6>12-24 horas</h6>
+                    </div>
+                </div>
+            </div>
+            <h6>Prueba para <strong>Covid 19</strong></h6>
+            <!-- <a data-button-modal="cotiza_antigeno">Cotizar</a> -->
+            <a href="https://marbu.one-consultores.com">Saber más</a>
+        </div>
+        <div class="item antigeno">
             <h4>Antígeno</h4>
             <div>
                 <div>
@@ -81,7 +116,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                     </figure>
                     <div>
                         <h5>Día de tomas:</h5>
-                        <h6>1-3 Días</h6>
+                        <h6>1 Día</h6>
                     </div>
                 </div>
                 <div>
@@ -116,7 +151,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                     </figure>
                     <div>
                         <h5>Día de tomas:</h5>
-                        <h6>1-5 Días</h6>
+                        <h6>1 Día</h6>
                     </div>
                 </div>
                 <div>

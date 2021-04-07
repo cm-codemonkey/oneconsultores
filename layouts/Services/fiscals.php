@@ -21,17 +21,17 @@
                     <div class="col-12 col-md-5">
                         <div class="col-12 p-b-20 text-center">
                             <figure class="figure-img">
-                                <img class="img-fluid m-b-10" src="{$path.images}fortaleza-fiscal.png" alt="fortaleza-fiscal">
-                            </figure>
-                            <h3 class="font-weight-bold">{$lang.servicios_fiscales_nuestra_fortaleza_title}</h3>
-                            <p class="text-left">{$lang.servicios_fiscales_nuestra_fortaleza_text}</p>
-                        </div>
-                        <div class="col-12 text-center">
-                            <figure class="figure-img">
                                 <img class="img-fluid m-b-10" src="{$path.images}que-hacemos-fiscal.png" alt="que-hacemos-fiscal">
                             </figure>
                             <h3 class="font-weight-bold">{$lang.servicios_fiscales_que_hacemos_title}</h3>
                             <p class="text-left">{$lang.servicios_fiscales_que_hacemos_text}</p>
+                        </div>
+                        <div class="col-12 text-center">
+                            <figure class="figure-img">
+                                <img class="img-fluid m-b-10" src="{$path.images}fortaleza-fiscal.png" alt="fortaleza-fiscal">
+                            </figure>
+                            <h3 class="font-weight-bold">{$lang.servicios_fiscales_nuestra_fortaleza_title}</h3>
+                            <p class="text-left">{$lang.servicios_fortaleza_text}</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-7">

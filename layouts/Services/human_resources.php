@@ -20,17 +20,17 @@
                 <div class="row">
                     <div class="col-12 col-md-6 p-b-20 text-center">
                         <figure class="figure-img">
-                            <img class="img-fluid m-b-10" src="{$path.images}fortaleza-rh.png" alt="fortaleza-rh">
-                        </figure>
-                        <h3 class="font-weight-bold">{$lang.servicios_rh_nuestra_fortaleza_title}</h3>
-                        <p class="text-left">{$lang.servicios_rh_nuestra_fortaleza_text}</p>
-                    </div>
-                    <div class="col-12 col-md-6 p-b-20 text-center">
-                        <figure class="figure-img">
                             <img class="img-fluid m-b-10" src="{$path.images}hacemor-rh.png" alt="hacemor-rh">
                         </figure>
                         <h3 class="font-weight-bold">{$lang.servicios_rh_que_hacemos_title}</h3>
                         <p class="text-left">{$lang.servicios_rh_que_hacemos_text}</p>
+                    </div>
+                    <div class="col-12 col-md-6 p-b-20 text-center">
+                        <figure class="figure-img">
+                            <img class="img-fluid m-b-10" src="{$path.images}fortaleza-rh.png" alt="fortaleza-rh">
+                        </figure>
+                        <h3 class="font-weight-bold">{$lang.servicios_rh_nuestra_fortaleza_title}</h3>
+                        <p class="text-left">{$lang.servicios_fortaleza_text}</p>
                     </div>
                 </div>
             </div>

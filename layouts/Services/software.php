@@ -19,18 +19,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 p-b-20 text-center">
-                        <figure class="figure-img">
-                            <img class="img-fluid m-b-10" src="{$path.images}fortaleza-marketing.png" alt="fortaleza-rh">
-                        </figure>
-                        <h3 class="font-weight-bold">{$lang.servicios_mercadotecnia_nuestra_fortaleza_title}</h3>
-                        <p class="text-left">Nuestro equipo de expertos y especialistas en el área de desarrollo de software, herramientas de vanguardia y conocimientos de ingeniería para desarrollar su producto con la mejor calidad.</p>
-                    </div>
-                    <div class="col-12 col-md-6 p-b-20 text-center">
-                        <figure class="figure-img">
+                        <figure class="figure-img" style="height:100px;">
                             <img class="img-fluid m-b-10" src="{$path.images}icono-global-02.png" alt="hacemor-rh">
                         </figure>
                         <h3 class="font-weight-bold">{$lang.servicios_mercadotecnia_que_hacemos_title}</h3>
-                        <p class="text-left">Analizamos, diseñamos y desarrollamos la mejor solución para nuestros clientes. Generamos estrategias de desarrollo y llevamos de la mano a nuestros clientes durante todo el proceso.</p>
+                        <p class="text-left">Analizamos, diseñamos e implementamos soluciones y herramientas de software que ayuden a nuestros clientes a digitalizar y agilizar sus procesos a través de la tecnología.</p>
+                    </div>
+                    <div class="col-12 col-md-6 p-b-20 text-center">
+                        <figure class="figure-img" style="height:100px;">
+                            <img class="img-fluid m-b-10" src="{$path.images}fortaleza-marketing.png" alt="fortaleza-rh">
+                        </figure>
+                        <h3 class="font-weight-bold">{$lang.servicios_mercadotecnia_nuestra_fortaleza_title}</h3>
+                        <p class="text-left">{$lang.servicios_fortaleza_text}</p>
                     </div>
                 </div>
             </div>
