@@ -95,5 +95,22 @@
                 </div>
             </div>
         </section>
+        <section class="salud">
+            <figure>
+                <img src="{$path.images}salud.png" alt="Secretaría de Salud">
+            </figure>
+            <figure>
+                <img src="{$path.images}cofepris.png" alt="COFEPRIS">
+            </figure>
+            <figure>
+                <img src="{$path.images}qroo.png" alt="Quintana Roo">
+            </figure>
+            <figure>
+                <img src="{$path.images}oportunidades.png" alt="Más y mejores oportunidades">
+            </figure>
+            <figure>
+                <img src="{$path.images}sesa.png" alt="SESA">
+            </figure>
+        </section>
     </main>
 </div>
