@@ -11,10 +11,10 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
 
 <div id="page">
     <div class="home_services">
-        <figure>
+        <!-- <figure>
             <img src="{$path.images}servicio-laboratorio.jpg" alt="Background">
             <a href="https://marbu.one-consultores.com"><img src="{$path.images}marbuu.png" alt="Marbu"><br>{$lang.main_menu_servicios_laboratorio}</a>
-        </figure>
+        </figure> -->
         <figure>
             <img src="{$path.images}servicio-contable.jpg" alt="Background">
             <a href="/servicios/contables">{$lang.main_menu_servicios_contables}</a>
@@ -63,7 +63,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                 <img src="{$path.images}hand_id_one.png" alt="ID One">
             </figure>
         </div>
-        <div class="item antigeno">
+        <!-- <div class="item antigeno">
             <h4>PCR</h4>
             <div>
                 <div>
@@ -95,7 +95,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                 </div>
             </div>
             <h6>Prueba para <strong>Covid 19</strong></h6>
-            <!-- <a data-button-modal="cotiza_antigeno">Cotizar</a> -->
+            <a data-button-modal="cotiza_antigeno">Cotizar</a>
             <a href="https://marbu.one-consultores.com">Saber más</a>
         </div>
         <div class="item antigeno">
@@ -130,7 +130,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                 </div>
             </div>
             <h6>Prueba para <strong>Covid 19</strong></h6>
-            <!-- <a data-button-modal="cotiza_antigeno">Cotizar</a> -->
+            <a data-button-modal="cotiza_antigeno">Cotizar</a>
             <a href="https://marbu.one-consultores.com">Saber más</a>
         </div>
         <div class="item anticuerpo">
@@ -165,9 +165,9 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
                 </div>
             </div>
             <h6>Prueba para <strong>Covid 19</strong></h6>
-            <!-- <a data-button-modal="cotiza_anticuerpo">Cotizar</a> -->
+            <a data-button-modal="cotiza_anticuerpo">Cotizar</a>
             <a href="https://marbu.one-consultores.com">Saber más</a>
-        </div>
+        </div> -->
         <div class="item socio_economico">
             <figure>
                 <img src="{$path.images}socioeconomico_reclutados.png" alt="Background">
@@ -193,10 +193,10 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             <h6>{$lang.know_one_consultores}</h6>
             <video src="{$path.images}one_consultores.mp4" controls></video>
         </div>
-        <div class="item">
+        <!-- <div class="item">
             <h6>{$lang.know_marbu}</h6>
             <video src="{$path.images}marbu.mp4" controls></video>
-        </div>
+        </div> -->
         <div class="item">
             <h6>{$lang.know_id_one}</h6>
             <video src="{$path.images}id_one.mp4" controls></video>

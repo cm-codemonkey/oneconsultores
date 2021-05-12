@@ -8,7 +8,7 @@
                     <div class="col-lg-12">
                         <figure>
                             <img src="{$path.images}icon_medicina_lp.png" alt="">
-                            <img src="{$path.images}marbuu.png" alt="">
+                            <!-- <img src="{$path.images}marbuu.png" alt=""> -->
                         </figure>
                         <h2 class="title">{$lang.servicios_medicina_title_page}</h2>
                         <h5 class="text-white m-b-20"><strong><i>- OIT.</i></strong></h5>

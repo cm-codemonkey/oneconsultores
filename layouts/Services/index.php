@@ -79,10 +79,10 @@
                                 <a href="/servicios/medicina_del_trabajo"><img src="{$path.images}icon_medicina_lp.png" alt="Service"></a>
                                 <span>{$lang.main_menu_servicios_medicina}</span>
                             </div>
-                            <div>
+                            <!-- <div>
                                 <a href="https://marbu.one-consultores.com"><img src="{$path.images}icon_laboratorio_lp.png" alt="Service"></a>
                                 <span>{$lang.main_menu_servicios_laboratorio}</span>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

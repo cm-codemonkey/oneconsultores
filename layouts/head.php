@@ -59,7 +59,7 @@
 							<div class="dropmenu">
 								<a class="btn btn-link">{$lang.main_menu_servicios}</a>
 								<div class="dropdown">
-									<a href="https://marbu.one-consultores.com"><img src="{$path.images}marbuu.png">{$lang.main_menu_servicios_laboratorio}</a>
+									<!-- <a href="https://marbu.one-consultores.com"><img src="{$path.images}marbuu.png">{$lang.main_menu_servicios_laboratorio}</a> -->
 									<a href="/servicios/contables"><img src="{$path.images}icon_contables.png">{$lang.main_menu_servicios_contables}</a>
 									<a href="/servicios/fiscales"><img src="{$path.images}icon_fiscales.png">{$lang.main_menu_servicios_fiscales}</a>
 									<a href="/servicios/mercadotecnia"><img src="{$path.images}icon_mercadotecnia.png">{$lang.main_menu_servicios_mercadotecnia}</a>
@@ -72,9 +72,9 @@
 								</div>
 							</div>
 						</li>
-						<li class="list-inline-item">
+						<!-- <li class="list-inline-item">
 							<a href="https://marbu.one-consultores.com" class="btn btn-link icon"><img src="{$path.images}marbuu.png" alt="">{$lang.main_menu_marbu}</a>
-						</li>
+						</li> -->
 						<!-- <li class="list-inline-item">
 							<a href="#" class="btn btn-link">{$lang.main_menu_soluciones}</a>
 						</li> -->
@@ -131,14 +131,14 @@
 								<li>
 									<a href="/servicios/medicina_del_trabajo" class="btn btn-link">{$lang.main_menu_servicios_medicina}</a>
 								</li>
-								<li>
+								<!-- <li>
 									<a href="https://marbu.one-consultores.com" class="btn btn-link">{$lang.main_menu_servicios_laboratorio}</a>
-								</li>
+								</li> -->
 							</ul>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="https://marbu.one-consultores.com" class="btn btn-link icon"><img src="{$path.images}marbuu.png" alt="">{$lang.main_menu_marbu}</a>
-						</li>
+						</li> -->
 						<!-- <li>
 							<a href="#" class="btn btn-link">{$lang.main_menu_soluciones}</a>
 						</li> -->
