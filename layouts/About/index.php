@@ -107,7 +107,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-gray p-t-50 p-b-50">
+        <!-- <section class="bg-gray p-t-50 p-b-50">
             <div class="container">
                 <h4 class="display-4 text-center text-uppercase m-t-50 m-b-40">{$lang.our_clients}</h4>
                 <div class="about_clients">
@@ -203,6 +203,6 @@
                     </figure>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 </div>

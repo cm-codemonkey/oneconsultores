@@ -74,7 +74,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             <video src="{$path.images}seguimos_contigo.mp4" controls></video>
         </div>
     </div>
-    <div class="home_clients">
+    <!-- <div class="home_clients">
         <h4 class="display-4 text-center text-uppercase m-t-50 m-b-40">{$lang.our_clients}</h4>
         <div id="home_clients" class="owl-carousel owl-theme">
             <figure class="item hor">
@@ -169,7 +169,7 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             </figure>
         </div>
         <a href="/nosotros">{$lang.know_more}</a>
-    </div>
+    </div> -->
     <div id="home_ads" class="owl-carousel owl-theme">
         <div class="item id_one">
             <div>
