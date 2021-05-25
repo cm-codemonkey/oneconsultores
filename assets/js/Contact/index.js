@@ -19,6 +19,7 @@ $(document).ready(function()
                 if (response.status == 'success')
                 {
                     alert(response.message);
+                    
                     location.reload();
                 }
                 else if (response.status == 'error')

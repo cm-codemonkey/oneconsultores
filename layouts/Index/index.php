@@ -11,10 +11,6 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
 
 <div id="page">
     <div class="home_services">
-        <!-- <figure>
-            <img src="{$path.images}servicio-laboratorio.jpg" alt="Background">
-            <a href="https://marbu.one-consultores.com"><img src="{$path.images}marbuu.png" alt="Marbu"><br>{$lang.main_menu_servicios_laboratorio}</a>
-        </figure> -->
         <figure>
             <img src="{$path.images}servicio-contable.jpg" alt="Background">
             <a href="/servicios/contables">{$lang.main_menu_servicios_contables}</a>
@@ -51,138 +47,10 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             <img src="{$path.images}servicio-medicina.jpg" alt="Background">
             <a href="/servicios/medicina_del_trabajo">{$lang.main_menu_servicios_medicina}</a>
         </figure>
-    </div>
-    <div id="home_ads" class="owl-carousel owl-theme">
-        <div class="item id_one">
-            <div>
-                <h4 class="display-4 text-center text-uppercase m-t-50 m-b-40">{$lang.know_id_one}</h4>
-                <p>{$lang.id_one_text}</p>
-                <a href="/id_one">{$lang.know_more}</a>
-            </div>
-            <figure>
-                <img src="{$path.images}hand_id_one.png" alt="ID One">
-            </figure>
-        </div>
-        <!-- <div class="item antigeno">
-            <h4>PCR</h4>
-            <div>
-                <div>
-                    <figure>
-                        <img src="{$path.images}antigeno_icon_1.svg" alt="Icon">
-                    </figure>
-                    <div>
-                        <h5>Muestra:</h5>
-                        <h6>Nasofaríngea</h6>
-                    </div>
-                </div>
-                <div>
-                    <figure>
-                        <img src="{$path.images}antigeno_icon_2.svg" alt="Icon">
-                    </figure>
-                    <div>
-                        <h5>Día de tomas:</h5>
-                        <h6>1 Día</h6>
-                    </div>
-                </div>
-                <div>
-                    <figure>
-                        <img src="{$path.images}antigeno_icon_3.svg" alt="Icon">
-                    </figure>
-                    <div>
-                        <h5>Resultados:</h5>
-                        <h6>12-24 horas</h6>
-                    </div>
-                </div>
-            </div>
-            <h6>Prueba para <strong>Covid 19</strong></h6>
-            <a data-button-modal="cotiza_antigeno">Cotizar</a>
-            <a href="https://marbu.one-consultores.com">Saber más</a>
-        </div>
-        <div class="item antigeno">
-            <h4>Antígeno</h4>
-            <div>
-                <div>
-                    <figure>
-                        <img src="{$path.images}antigeno_icon_1.svg" alt="Icon">
-                    </figure>
-                    <div>
-                        <h5>Muestra:</h5>
-                        <h6>Nasofaríngea</h6>
-                    </div>
-                </div>
-                <div>
-                    <figure>
-                        <img src="{$path.images}antigeno_icon_2.svg" alt="Icon">
-                    </figure>
-                    <div>
-                        <h5>Día de tomas:</h5>
-                        <h6>1 Día</h6>
-                    </div>
-                </div>
-                <div>
-                    <figure>
-                        <img src="{$path.images}antigeno_icon_3.svg" alt="Icon">
-                    </figure>
-                    <div>
-                        <h5>Resultados:</h5>
-                        <h6>15-20 min</h6>
-                    </div>
-                </div>
-            </div>
-            <h6>Prueba para <strong>Covid 19</strong></h6>
-            <a data-button-modal="cotiza_antigeno">Cotizar</a>
-            <a href="https://marbu.one-consultores.com">Saber más</a>
-        </div>
-        <div class="item anticuerpo">
-            <h4>Anticuerpo</h4>
-            <div>
-                <div>
-                    <figure>
-                        <img src="{$path.images}antigeno_icon_4.svg" alt="Icon">
-                    </figure>
-                    <div>
-                        <h5>Muestra:</h5>
-                        <h6>Sangre</h6>
-                    </div>
-                </div>
-                <div>
-                    <figure>
-                        <img src="{$path.images}antigeno_icon_2.svg" alt="Icon">
-                    </figure>
-                    <div>
-                        <h5>Día de tomas:</h5>
-                        <h6>1 Día</h6>
-                    </div>
-                </div>
-                <div>
-                    <figure>
-                        <img src="{$path.images}antigeno_icon_3.svg" alt="Icon">
-                    </figure>
-                    <div>
-                        <h5>Resultados:</h5>
-                        <h6>15-20 min</h6>
-                    </div>
-                </div>
-            </div>
-            <h6>Prueba para <strong>Covid 19</strong></h6>
-            <a data-button-modal="cotiza_anticuerpo">Cotizar</a>
-            <a href="https://marbu.one-consultores.com">Saber más</a>
-        </div> -->
-        <div class="item socio_economico">
-            <figure>
-                <img src="{$path.images}socioeconomico_reclutados.png" alt="Background">
-            </figure>
-            <div>
-                <h4>Estudios <strong>Socioeconómicos</strong></h4>
-                <h5>Incluyen:</h5>
-                <h6>Verificación de documentación</h6>
-                <h6>Integración de cuadro familiar</h6>
-                <h6>Evidencia fotográfica</h6>
-                <h6>Referencias personales, laborales y vecinales</h6>
-                <h6>Investigación de ingresos/egresos</h6>
-                <!-- <a data-button-modal="cotiza_socioeconomico">Cotizar</a> -->
-            </div>
-        </div>
+        <figure>
+            <img src="{$path.images}servicio-laboratorio.jpg" alt="Background">
+            <a href="/servicios/laboratorio">{$lang.main_menu_servicios_laboratorio}</a>
+        </figure>
     </div>
     <div class="home_videos">
         <div class="item">
@@ -193,10 +61,6 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             <h6>{$lang.know_one_consultores}</h6>
             <video src="{$path.images}one_consultores.mp4" controls></video>
         </div>
-        <!-- <div class="item">
-            <h6>{$lang.know_marbu}</h6>
-            <video src="{$path.images}marbu.mp4" controls></video>
-        </div> -->
         <div class="item">
             <h6>{$lang.know_id_one}</h6>
             <video src="{$path.images}id_one.mp4" controls></video>
@@ -209,11 +73,8 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             <h6>{$lang.seguimos_contigo}</h6>
             <video src="{$path.images}seguimos_contigo.mp4" controls></video>
         </div>
-        <div class="button">
-            <a href="/blog">¡Leé nuestro blog!</a>
-        </div>
     </div>
-    <!-- <div class="home_clients">
+    <div class="home_clients">
         <h4 class="display-4 text-center text-uppercase m-t-50 m-b-40">{$lang.our_clients}</h4>
         <div id="home_clients" class="owl-carousel owl-theme">
             <figure class="item hor">
@@ -308,205 +169,119 @@ $this->dependencies->add(['js', '{$path.js}Index/index.js']);
             </figure>
         </div>
         <a href="/nosotros">{$lang.know_more}</a>
-    </div> -->
+    </div>
+    <div id="home_ads" class="owl-carousel owl-theme">
+        <div class="item id_one">
+            <div>
+                <h4 class="display-4 text-center text-uppercase m-t-50 m-b-40">{$lang.know_id_one}</h4>
+                <p>{$lang.id_one_text}</p>
+                <a href="https://idone.mx" target="_blank">{$lang.know_more}</a>
+            </div>
+            <figure>
+                <img src="{$path.images}hand_id_one.png" alt="ID One">
+            </figure>
+        </div>
+        <div class="item antigeno">
+            <h4>PCR</h4>
+            <div>
+                <div>
+                    <figure>
+                        <img src="{$path.images}antigeno_icon_1.svg" alt="Icon">
+                    </figure>
+                    <div>
+                        <h5>Muestra:</h5>
+                        <h6>Nasofaríngea</h6>
+                    </div>
+                </div>
+                <div>
+                    <figure>
+                        <img src="{$path.images}antigeno_icon_2.svg" alt="Icon">
+                    </figure>
+                    <div>
+                        <h5>Día de tomas:</h5>
+                        <h6>1 Día</h6>
+                    </div>
+                </div>
+                <div>
+                    <figure>
+                        <img src="{$path.images}antigeno_icon_3.svg" alt="Icon">
+                    </figure>
+                    <div>
+                        <h5>Resultados:</h5>
+                        <h6>12-24 horas</h6>
+                    </div>
+                </div>
+            </div>
+            <h6>Prueba para <strong>Covid 19</strong></h6>
+            <a href="https://skylabs.mx" target="_blank">{$lang.know_more}</a>
+        </div>
+        <div class="item antigeno">
+            <h4>Antígeno</h4>
+            <div>
+                <div>
+                    <figure>
+                        <img src="{$path.images}antigeno_icon_1.svg" alt="Icon">
+                    </figure>
+                    <div>
+                        <h5>Muestra:</h5>
+                        <h6>Nasofaríngea</h6>
+                    </div>
+                </div>
+                <div>
+                    <figure>
+                        <img src="{$path.images}antigeno_icon_2.svg" alt="Icon">
+                    </figure>
+                    <div>
+                        <h5>Día de tomas:</h5>
+                        <h6>1 Día</h6>
+                    </div>
+                </div>
+                <div>
+                    <figure>
+                        <img src="{$path.images}antigeno_icon_3.svg" alt="Icon">
+                    </figure>
+                    <div>
+                        <h5>Resultados:</h5>
+                        <h6>15-20 min</h6>
+                    </div>
+                </div>
+            </div>
+            <h6>Prueba para <strong>Covid 19</strong></h6>
+            <a href="https://skylabs.mx" target="_blank">{$lang.know_more}</a>
+        </div>
+        <div class="item anticuerpo">
+            <h4>Anticuerpo</h4>
+            <div>
+                <div>
+                    <figure>
+                        <img src="{$path.images}antigeno_icon_4.svg" alt="Icon">
+                    </figure>
+                    <div>
+                        <h5>Muestra:</h5>
+                        <h6>Sangre</h6>
+                    </div>
+                </div>
+                <div>
+                    <figure>
+                        <img src="{$path.images}antigeno_icon_2.svg" alt="Icon">
+                    </figure>
+                    <div>
+                        <h5>Día de tomas:</h5>
+                        <h6>1 Día</h6>
+                    </div>
+                </div>
+                <div>
+                    <figure>
+                        <img src="{$path.images}antigeno_icon_3.svg" alt="Icon">
+                    </figure>
+                    <div>
+                        <h5>Resultados:</h5>
+                        <h6>15-20 min</h6>
+                    </div>
+                </div>
+            </div>
+            <h6>Prueba para <strong>Covid 19</strong></h6>
+            <a href="https://skylabs.mx" target="_blank">{$lang.know_more}</a>
+        </div>
+    </div>
 </div>
-<!-- <section class="modal" data-modal="cotiza_antigeno">
-    <div class="content">
-        <main>
-            <form name="cotiza_antigeno">
-                <h4 class="m-b-20">Cotiza | Prueba Antígeno</h4>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="label">
-                            <label>
-                                <p>Nombre de la empresa <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="company_name">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="label">
-                            <label>
-                                <p>Dirección de la empresa <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="company_address">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="label">
-                            <label>
-                                <p>Nombre de contacto <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="contact_name">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="label">
-                            <label>
-                                <p>Teléfono de contacto <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="contact_phone">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="label">
-                            <label>
-                                <p>Email de contacto <span class="text-danger"><small>*</small></span></p>
-                                <input type="email" name="contact_email">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="label">
-                            <label>
-                                <p>Cant. de pruebas <span class="text-danger"><small>*</small></span></p>
-                                <input type="number" name="tests_quantity">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-6 offset-md-3 suffix-md-3 m-t-20">
-                        <input type="hidden" name="recaptcha_2" id="recaptcha_2">
-                        <button type="submit" class="btn btn-warning btn-block btn-lg m-b-5">Enviar</button>
-                        <a button-close class="btn btn-warning btn-block btn-lg">Cancelar</a>
-                    </div>
-                </div>
-            </form>
-        </main>
-    </div>
-</section>
-<section class="modal" data-modal="cotiza_anticuerpo">
-    <div class="content">
-        <main>
-            <form name="cotiza_anticuerpo">
-                <h4 class="m-b-20">Cotiza | Prueba Anticuerpo</h4>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="label">
-                            <label>
-                                <p>Nombre de la empresa <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="company_name">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="label">
-                            <label>
-                                <p>Dirección de la empresa <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="company_address">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="label">
-                            <label>
-                                <p>Nombre de contacto <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="contact_name">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="label">
-                            <label>
-                                <p>Teléfono de contacto <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="contact_phone">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="label">
-                            <label>
-                                <p>Email de contacto <span class="text-danger"><small>*</small></span></p>
-                                <input type="email" name="contact_email">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="label">
-                            <label>
-                                <p>Cant. de pruebas <span class="text-danger"><small>*</small></span></p>
-                                <input type="number" name="tests_quantity">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-6 offset-md-3 suffix-md-3 m-t-20">
-                        <input type="hidden" name="recaptcha_3" id="recaptcha_3">
-                        <button type="submit" class="btn btn-warning btn-block btn-lg m-b-5">Enviar</button>
-                        <a button-close class="btn btn-warning btn-block btn-lg">Cancelar</a>
-                    </div>
-                </div>
-            </form>
-        </main>
-    </div>
-</section>
-<section class="modal" data-modal="cotiza_socioeconomico">
-    <div class="content">
-        <main>
-            <form name="cotiza_socioeconomico">
-                <h4 class="m-b-20">Cotiza | Estudio socioeconómico</h4>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="label">
-                            <label>
-                                <p>Nombre de la empresa <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="company_name">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="label">
-                            <label>
-                                <p>RFC de la empresa <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="company_rfc">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="label">
-                            <label>
-                                <p>Dirección de la empresa <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="company_address">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="label">
-                            <label>
-                                <p>Rotación de empleados por mes <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="company_rot">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="label">
-                            <label>
-                                <p>Nombre de contacto <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="contact_name">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="label">
-                            <label>
-                                <p>Teléfono de contacto <span class="text-danger"><small>*</small></span></p>
-                                <input type="text" name="contact_phone">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="label">
-                            <label>
-                                <p>Email de contacto <span class="text-danger"><small>*</small></span></p>
-                                <input type="email" name="contact_email">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-6 offset-md-3 suffix-md-3 m-t-20">
-                        <input type="hidden" name="recaptcha_4" id="recaptcha_4">
-                        <button type="submit" class="btn btn-warning btn-block btn-lg m-b-5">Enviar</button>
-                        <a button-close class="btn btn-warning btn-block btn-lg">Cancelar</a>
-                    </div>
-                </div>
-            </form>
-        </main>
-    </div>
-</section> -->

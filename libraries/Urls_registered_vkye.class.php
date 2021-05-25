@@ -61,22 +61,6 @@ class Urls_registered_vkye
                 'controller' => 'Services',
                 'method' => 'laboratory'
             ],
-            '/marbu' => [
-                'controller' => 'Marbu',
-                'method' => 'index'
-            ],
-            '/solutions' => [
-                'controller' => 'Solutions',
-                'method' => 'index'
-            ],
-            '/blog' => [
-                'controller' => 'Blog',
-                'method' => 'index'
-            ],
-            '/blog/%param%' => [
-                'controller' => 'Blog',
-                'method' => 'view'
-            ],
             '/contacto' => [
                 'controller' => 'Contact',
                 'method' => 'index'

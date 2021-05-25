@@ -34,47 +34,29 @@ class Contact_controller extends Controller
 			if (!isset($_POST['comment']) OR empty($_POST['comment']))
 				array_push($errors, ['comment','{$lang.not_empty_comment}']);
 
-			if (!isset($_POST['privacy_notice']) OR empty($_POST['privacy_notice']))
-				array_push($errors, ['privacy_notice','{$lang.not_empty_privacy_notice}']);
-
 			if (empty($errors))
 			{
-				$recaptcha = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6LdgUVAaAAAAAKRUlNJfgsAdnXcjIA9eWRd0BIss&response=' . $_POST['recaptcha_1']);
-				$recaptcha = json_decode($recaptcha);
+				$mail = new Mailer(true);
 
-				if ($recaptcha->success = true AND $recaptcha->score >= 0.7)
+				try
 				{
-					$mail = new Mailer(true);
-
-					try
-					{
-						$mail->setFrom('info@one-consultores.com', Configuration::$web_page);
-						$mail->addAddress('info@one-consultores.com', Configuration::$web_page);
-						$mail->Subject = 'Nuevo contacto desde oneconsultores.com';
-						$mail->Body = 'Nombre: ' . $_POST['name'] . '<br>Correo electrónico: ' . $_POST['email'] . '<br>Teléfono: ' . $_POST['phone'] . '<br>Compañia: ' . $_POST['company'] . '<br> Comentario: ' . $_POST['comment'];
-						$mail->send();
-					}
-					catch (Exception $e) {}
-
-					if ($this->lang == 'es')
-						$message = '¡Gracias por ponerte en contacto con nosotros!';
-					else if ($this->lang == 'en')
-						$message = '¡Thank you for contacting us!';
-
-					echo json_encode([
-						'status' => 'success',
-						'message' => $message
-					]);
+					$mail->setFrom('contacto@one-consultores.com', Configuration::$web_page);
+					$mail->addAddress('contacto@one-consultores.com', Configuration::$web_page);
+					$mail->Subject = 'Nuevo contacto';
+					$mail->Body = 'Nombre: ' . $_POST['name'] . '<br>Correo electrónico: ' . $_POST['email'] . '<br>Teléfono: ' . $_POST['phone'] . '<br>Compañia: ' . $_POST['company'] . '<br> Comentario: ' . $_POST['comment'];
+					$mail->send();
 				}
-				else
-				{
-					echo json_encode([
-						'status' => 'error',
-						'errors' => [
-							['RECAPTCHA', 'RECAPTCHA ERROR']
-						]
-					]);
-				}
+				catch (Exception $e) {}
+
+				if ($this->lang == 'es')
+					$message = '¡Gracias por ponerte en contacto con nosotros!';
+				else if ($this->lang == 'en')
+					$message = '¡Thank you for contacting us!';
+
+				echo json_encode([
+					'status' => 'success',
+					'message' => $message
+				]);
 			}
 			else
 			{

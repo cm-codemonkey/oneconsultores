@@ -69,14 +69,7 @@ $this->dependencies->add(['js', '{$path.js}Contact/index.js']);
                                 </label>
                             </div>
                         </div>
-                        <div class="col-md-12 text-center">
-                            <label>
-                                <input type="checkbox" name="privacy_notice">
-                                <a href="/aviso_de_privacidad" target="_blank">{$lang.privacy_notice}</a>
-                            </label>
-                        </div>
                         <div class="col-md-6 offset-md-3 suffix-md-3 m-t-20">
-                            <input type="hidden" name="recaptcha_1" id="recaptcha_1">
                             <button type="submit" class="btn btn-warning btn-block btn-lg">{$lang.contacto_button_submit}</button>
                         </div>
                     </div>

@@ -118,7 +118,7 @@ class Configuration
 	 *
      * @var boolean $db_state
      */
-	public static $db_state = true;
+	public static $db_state = false;
 
 	/**
      * Tipo de base de datos.
@@ -137,7 +137,7 @@ class Configuration
 	 *
      * @var string $db_host
      */
-	public static $db_host = '149.56.81.137';
+	public static $db_host = '';
 
 	/**
      * Nombre de la base de datos
@@ -146,7 +146,7 @@ class Configuration
 	 *
      * @var string $db_name
      */
-	public static $db_name = 'oneconsultores';
+	public static $db_name = '';
 
 	/**
      * Usuario de la base de datos
@@ -155,7 +155,7 @@ class Configuration
 	 *
      * @var string $db_user
      */
-	public static $db_user = 'oneconsultores';
+	public static $db_user = '';
 
 	/**
      * Contraseña de la base de datos.
@@ -164,7 +164,7 @@ class Configuration
 	 *
      * @var string $db_pass
      */
-	public static $db_pass = '*V50auu9';
+	public static $db_pass = '';
 
 	/**
      * Tipo de caracteres para la base de datos. Opcional.
