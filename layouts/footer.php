@@ -50,5 +50,17 @@
         <script src="https://kit.fontawesome.com/743152b0c5.js"></script>
         {$dependencies.js}
         {$dependencies.other}
+
+        <!-- Smartsupp Live Chat script -->
+        <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = '1a30451532ce7c2b6950dcb2efd9a7e3e131d9d8';
+        window.smartsupp||(function(d) {
+          var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+          s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+          c.type='text/javascript';c.charset='utf-8';c.async=true;
+          c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+        })(document);
+        </script>
     </body>
 </html>
