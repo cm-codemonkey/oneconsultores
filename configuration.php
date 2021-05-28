@@ -220,7 +220,7 @@ class Configuration
 	 *
      * @var boolean $smtp_auth
      */
-	public static $smtp_auth = true;
+	public static $smtp_auth = false;
 
 	/**
      * Dominio o IP del servidor SMTP.
@@ -229,7 +229,7 @@ class Configuration
 	 *
      * @var string $smtp_host
      */
-	public static $smtp_host = 'smtp.gmail.com';
+	public static $smtp_host = '';
 
 	/**
      * Usuario de la cuenta smtp.
@@ -239,7 +239,7 @@ class Configuration
 	 *
      * @var string $smtp_user
      */
-	public static $smtp_user = 'noreply@one-consultores.com';
+	public static $smtp_user = '';
 
 	/**
      * Contraseña de la cuenta smtp.
@@ -248,7 +248,7 @@ class Configuration
 	 *
      * @var string $smtp_pass
      */
-	public static $smtp_pass = '5G>BaT&9';
+	public static $smtp_pass = '';
 
 	/**
      * Seguridad de la encriptacion para el envio de SMTP.
