@@ -20,29 +20,39 @@ body {
     position: relative;
 }
 
-.floating_contacts {
-    width: 50px;
+#floating {
+    width: auto;
+    height: 50px;
     position: fixed;
     right: 20px;
-    bottom: 90px;
+    bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #009688;
+    padding: 0px 20px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
     z-index: 99;
 }
 
-.floating_contacts > a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: #fff;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    cursor: pointer;
+#floating > i {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+
+    #floating > i {
+        margin-right: 0px;
+    }
+
+    #floating > span {
+        display: none;
+    }
 }
 
 header.topbar {

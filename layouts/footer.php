@@ -44,6 +44,7 @@
                 <a href="/aviso_de_privacidad">{$lang.privacy_notice}</a>
             </div>
         </footer>
+        <a id="floating" href="https://api.whatsapp.com/send?phone=+529985010226" target="_blank"><i class="fab fa-whatsapp"></i><span>Whatsapp</span></a>
         <script src="{$path.js}jquery-3.4.1.min.js"></script>
         <script src="{$path.js}valkyrie.js?v=1.0"></script>
         <script src="{$path.js}scripts.js?v=2.1"></script>
@@ -52,7 +53,7 @@
         {$dependencies.other}
 
         <!-- Smartsupp Live Chat script -->
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
         var _smartsupp = _smartsupp || {};
         _smartsupp.key = '1a30451532ce7c2b6950dcb2efd9a7e3e131d9d8';
         window.smartsupp||(function(d) {
@@ -61,6 +62,6 @@
           c.type='text/javascript';c.charset='utf-8';c.async=true;
           c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
         })(document);
-        </script>
+        </script> -->
     </body>
 </html>

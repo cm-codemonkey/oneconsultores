@@ -125,8 +125,3 @@
 				</nav>
 			</div>
 		</header>
-		<div class="floating_contacts">
-			<a href="/contacto" style="background-color: #9c27b0;"><i class="fas fa-envelope"></i></a>
-			<a href="tel:+529985010226" style="background-color: #ff5722;"><i class="fas fa-phone"></i></a>
-			<a href="https://api.whatsapp.com/send?phone=+529985010226" target="_blank" style="background-color: #4AC959;"><i class="fab fa-whatsapp"></i></a>
-		</div>
